@@ -2,9 +2,9 @@
 
 namespace Dinhdjj\Midmodel;
 
+use Dinhdjj\Midmodel\Commands\MidmodelCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Dinhdjj\Midmodel\Commands\MidmodelCommand;
 
 class MidmodelServiceProvider extends PackageServiceProvider
 {
@@ -20,6 +20,7 @@ class MidmodelServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_midmodel_table')
-            ->hasCommand(MidmodelCommand::class);
+            ->hasCommand(MidmodelCommand::class)
+        ;
     }
 }
