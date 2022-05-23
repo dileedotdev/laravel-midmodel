@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Dinhdjj\Midmodel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MidmodelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'midmodel';
 
     public $description = 'My command';
 
