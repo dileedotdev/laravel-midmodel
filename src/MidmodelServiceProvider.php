@@ -19,7 +19,7 @@ class MidmodelServiceProvider extends PackageServiceProvider
             ->name('midmodel')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_midmodel_table')
+            ->hasMigration('create_midmodel_tables')
             ->hasCommand(MidmodelCommand::class)
         ;
     }
